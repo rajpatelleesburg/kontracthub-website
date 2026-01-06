@@ -36,6 +36,11 @@
       "static/chunks/main-app.js",
       "static/chunks/app/compliance/page.js"
     ],
+    "/brokers/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/brokers/page.js"
+    ],
     "/docs/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -46,11 +51,6 @@
       "static/chunks/main-app.js",
       "static/chunks/app/docs/layout.js"
     ],
-    "/brokers/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/brokers/page.js"
-    ],
     "/investors/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -60,16 +60,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/roadmap/page.js"
-    ],
-    "/demo/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/demo/page.js"
-    ],
-    "/demo/thanks/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/demo/thanks/page.js"
     ]
   }
 }

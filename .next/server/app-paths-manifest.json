@@ -1,11 +1,11 @@
 {
+  "/page": "app/page.js",
+  "/product/page": "app/product/page.js",
+  "/features/page": "app/features/page.js",
   "/pricing/page": "app/pricing/page.js",
   "/compliance/page": "app/compliance/page.js",
   "/brokers/page": "app/brokers/page.js",
   "/investors/page": "app/investors/page.js",
   "/roadmap/page": "app/roadmap/page.js",
-  "/demo/page": "app/demo/page.js",
-  "/api/demo/route": "app/api/demo/route.js",
-  "/demo/thanks/page": "app/demo/thanks/page.js",
   "/docs/page": "app/docs/page.js"
 }

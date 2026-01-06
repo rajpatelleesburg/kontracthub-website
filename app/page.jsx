@@ -1,49 +1,107 @@
+"use client";
 import Link from "next/link";
-export default function Page() {
+
+export default function Home() {
   return (
-    <div>
-      <section className="hero">
-        <div className="container hero-grid">
-          <div className="card">
-            <div className="kicker">Brokerage Operations Platform</div>
-            <h1 className="h1">The operating system for real estate transactions</h1>
-            <p className="sub">
-              KontractHub manages the full transaction lifecycle—contract upload, <strong>EMD tracking</strong>, <strong>contingency handling</strong>,
-              and <strong>final closing documents</strong> (including <strong>ALTA settlement statements</strong>)—with audit trails and compliance readiness.
+    <main
+      style={{
+        minHeight: "calc(100vh - 64px)",
+        display: "flex",
+        alignItems: "center",
+      }}
+    >
+      <section className="container">
+        {/* HERO + SINGLE PRODUCT SHOT */}
+        <div
+          className="card"
+          style={{
+            display: "grid",
+            gridTemplateColumns: "1.05fr 0.95fr",
+            gap: 20,
+            padding: 22,
+          }}
+        >
+          {/* LEFT — VALUE */}
+          <div>
+            <div className="kicker">Compliance-first brokerage platform</div>
+            <h1 className="h1" style={{ marginBottom: 10 }}>
+              The operating system<br />for real estate transactions
+            </h1>
+            <p className="sub" style={{ marginBottom: 14 }}>
+              KontractHub replaces spreadsheets, email chains, and shared drives
+              with one system to manage contracts, EMD, contingencies,
+              and closing documents — end to end.
             </p>
-            <div style={{display:"flex", gap:10, flexWrap:"wrap"}} id="get-started">
-              <Link className="btn btn-primary" href="/demo">Request a demo</Link>
-              <Link className="btn" href="/product">Explore product</Link>
-              <Link className="btn" href="/docs">Read docs</Link>
-            </div>
-            <div className="pillrow">
-              <span className="pill">Contract Upload</span><span className="pill">EMD Collection</span><span className="pill">Contingencies</span>
-              <span className="pill">Closing Packet + ALTA</span><span className="pill">Audit + Compliance</span>
-            </div>
-          </div>
-          <div className="card">
-            <div className="kicker">Screenshots</div>
-            <h2 className="h2">What it looks like</h2>
-            <p className="p">Sample UI screenshots (placeholders). Replace with real product captures anytime.</p>
-            <div className="hr" />
-            <div style={{display:"grid", gap:10}}>
-              <img src="/screenshots/agent-dashboard.png" alt="Agent dashboard screenshot" style={{width:"100%", borderRadius:14, border:"1px solid var(--border)"}} />
-              <img src="/screenshots/transaction-detail.png" alt="Transaction detail screenshot" style={{width:"100%", borderRadius:14, border:"1px solid var(--border)"}} />
+
+            <ul className="list" style={{ marginBottom: 14 }}>
+              <li>Track EMD and contingency deadlines automatically</li>
+              <li>Maintain audit-ready closing packets (including ALTA)</li>
+              <li>Enforce brokerage standards without micromanagement</li>
+            </ul>
+
+            <div style={{ display: "flex", gap: 10 }}>
+              <Link href="/demo" className="btn btn-primary">Request Demo</Link>
+              <Link href="/product" className="btn">How it works</Link>
             </div>
           </div>
-        </div>
-      </section>
-      <section className="section">
-        <div className="container">
-          <div className="card">
-            <div className="kicker">Architecture</div>
-            <h2 className="h2">Built for auditability</h2>
-            <p className="p">Mobile/web clients call your API; Lambdas enforce rules; data is isolated by workspace.</p>
-            <div className="hr" />
-            <img src="/diagrams/architecture.svg" alt="KontractHub architecture diagram" style={{width:"100%", borderRadius:14, border:"1px solid var(--border)", background:"rgba(16,26,51,.35)"}} />
+
+          {/* RIGHT — SINGLE FILLED SCREENSHOT */}
+          <div>
+            <img
+              src="/screenshots/transaction-detail.png"
+              alt="Transaction detail — EMD, contingencies, and documents"
+              style={{
+                width: "100%",
+                borderRadius: 12,
+                border: "1px solid var(--border)",
+              }}
+            />
+            <div className="small" style={{ marginTop: 6 }}>
+              Transaction detail — EMD, contingencies, and documents in one view
+            </div>
           </div>
         </div>
+
+        {/* COMPACT VALUE STRIP */}
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(3,1fr)",
+            gap: 12,
+            marginTop: 14,
+          }}
+        >
+          <div className="card">
+            <h3 className="h3">For Brokers</h3>
+            <p className="p">Reduce compliance risk across every deal.</p>
+          </div>
+          <div className="card">
+            <h3 className="h3">For Agents</h3>
+            <p className="p">One place to upload contracts and stay ahead.</p>
+          </div>
+          <div className="card">
+            <h3 className="h3">For Compliance</h3>
+            <p className="p">Audit-ready records without scrambling.</p>
+          </div>
+        </div>
+
+        {/* INLINE FOOTER */}
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            marginTop: 12,
+            fontSize: 13,
+            color: "var(--muted)",
+          }}
+        >
+          <div>
+            <strong>KontractHub</strong> — The operating system for real estate transactions.
+          </div>
+          <div>© 2026 KontractHub</div>
+        </div>
       </section>
-    </div>
+    </main>
   );
 }

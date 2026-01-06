@@ -1,4 +1,4 @@
-// File: C:\Users\rpatel\Python\KontractHubWebsite\app\features\page.jsx
+// File: C:\Users\rpatel\Python\kontracthub-website\app\features\page.jsx
 import * as entry from '../../../../app/features/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

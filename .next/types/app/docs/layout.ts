@@ -1,4 +1,4 @@
-// File: C:\Users\rpatel\Python\KontractHubWebsite\app\docs\layout.jsx
+// File: C:\Users\rpatel\Python\kontracthub-website\app\docs\layout.jsx
 import * as entry from '../../../../app/docs/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
