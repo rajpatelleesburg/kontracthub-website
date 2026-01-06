@@ -1,0 +1,1 @@
+export const metadata={title:'Security — KontractHub'};export default function Page(){return(<div className='container section'><div className='card'><div className='kicker'>Security</div><h1 className='h1' style={{fontSize:38}}>Audit-ready by default</h1><p className='sub'>Role-based access and document history.</p></div></div>);}

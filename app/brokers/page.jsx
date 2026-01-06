@@ -1,0 +1,1 @@
+export const metadata={title:'For Brokers — KontractHub'};export default function Page(){return(<div className='container section'><div className='card'><div className='kicker'>Brokers</div><h1 className='h1' style={{fontSize:38}}>Broker-facing explainer</h1><p className='sub'>Oversight across EMD, contingencies, and closing packets—with audit trails.</p></div></div>);}

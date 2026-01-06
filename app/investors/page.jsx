@@ -1,0 +1,1 @@
+export const metadata={title:'Investors — KontractHub'};export default function Page(){return(<div className='container section'><div className='card'><div className='kicker'>Investor one-pager</div><h1 className='h1' style={{fontSize:38}}>KontractHub</h1><p className='sub'>Compliance-first SaaS for real estate transactions.</p></div></div>);}

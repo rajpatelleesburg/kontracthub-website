@@ -1,0 +1,1 @@
+export default function NotFound(){return(<div className='container section'><div className='card'><div className='kicker'>404</div><h1 className='h1' style={{fontSize:34}}>Page not found</h1><p className='p'>Use the navigation to get back on track.</p></div></div>);}
