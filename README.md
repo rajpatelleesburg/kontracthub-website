@@ -1,4 +1,6 @@
 # KontractHub Marketing + Docs Site (Next.js)
+#vercel gives an error if you have project name with Captial so renamed
+#KontractHubWebsite to kontracthub-website
 
 Includes:
 - Placeholder screenshots + diagrams (swap with real captures anytime)
