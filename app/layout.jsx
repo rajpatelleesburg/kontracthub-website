@@ -50,23 +50,6 @@ export default function RootLayout({ children }) {
         </div>
 
         <main>{children}</main>
-
-        <footer className="footer">
-          <div className="container">
-            <div style={{display:"flex", justifyContent:"space-between", gap:12, flexWrap:"wrap"}}>
-              <div>
-                <strong>KontractHub</strong>
-                <div className="small">The operating system for real estate transactions.</div>
-              </div>
-              <div className="small">© {new Date().getFullYear()} KontractHub. All rights reserved.</div>
-            </div>
-            <div className="hr" />
-            <div className="small">
-              KontractHub helps brokerages structure transactions, track EMD and contingencies, and build audit-ready closing packets (including ALTA).
-              This site is marketing + documentation; consult counsel for legal/regulatory interpretation.
-            </div>
-          </div>
-        </footer>
       </body>
     </html>
   );
